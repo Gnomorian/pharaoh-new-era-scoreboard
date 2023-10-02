@@ -4,9 +4,9 @@ using BepInEx.Logging;
 using HarmonyLib;
 using System.Reflection;
 
-namespace BazzarBuilding
+namespace PNEScoreboard
 {
-    [BepInPlugin("kenzie.pharaoh.bazzarbuilding", "BazzarBuilding", "0.0.1")]
+    [BepInPlugin("kenzie.pharaoh.PNEScoreboard", "PNEScoreboard", "0.0.1")]
     [HarmonyPatch]
     public partial class Plugin : BaseUnityPlugin
     {
@@ -18,7 +18,7 @@ namespace BazzarBuilding
         {
             LOG = new ManualLogSource("Log");
             BepInEx.Logging.Logger.Sources.Add(LOG);
-            LOG.LogWarning($"Plugin BazzarBuilding! is loaded!");
+            LOG.LogWarning($"Plugin PNEScoreboard! is loaded!");
             Debug = Config.Bind("General", "Debug", false, "Enable debug logging.");
             _hi = Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         }

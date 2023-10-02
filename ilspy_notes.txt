@@ -1,0 +1,14 @@
+Pharaoh IlSpy Tips:
+
+search - OnDailyUpdate
+this is the function called by all buildings implimenting daily changes, such as irrigated buildings or road access checking.
+
+IrrigationFertilityChecker
+shows an irrigation range of 2, a ditch can be 2 tiles away from a farm to be effective.
+
+MapGameplay appears to be the actual "game" at runtime
+
+public void SetLockBuildingInBuildingBar(BuildingType type, bool locked, bool outOfTutorial = true)
+some function that locks the ability to use certain buildings in a level
+
+BuildingBar::RefreshAvailableCategories() is a good starting point for adding new buildings
