@@ -2,3 +2,4 @@ bin
 obj
 .\Pharaoh_data\Managed\*.dll
 .vs
+*.dll
